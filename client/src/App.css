@@ -1,0 +1,140 @@
+
+.portfolio {
+  min-height: 100vh;
+  background: #0b0b16;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8%;
+  border-bottom: 1px solid #252239;
+}
+
+.logo {
+  color: #a78bfa;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #d1d1df;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #a78bfa;
+}
+
+.hero {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 70px 12%;
+}
+
+.intro {
+  color: #a78bfa;
+  letter-spacing: 4px;
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero h1 span {
+  display: block;
+  color: #a78bfa;
+  margin-top: 8px;
+  font-size: 0.8em;
+}
+
+.description {
+  max-width: 520px;
+  color: #b7b7c9;
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 24px 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.primary-btn {
+  background: #8b5cf6;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #7c3aed;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  border: 1px solid #8b5cf6;
+  color: #c4b5fd;
+}
+
+.secondary-btn:hover {
+  background: #171329;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 22px 5%;
+  }
+
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: calc(100vh - 120px);
+    padding: 60px 7%;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero h1 span {
+    font-size: 0.75em;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
